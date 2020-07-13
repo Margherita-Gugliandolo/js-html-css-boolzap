@@ -148,13 +148,28 @@ input:focus{
 }
 
 #message-content{
-  max-width: 50%;
   margin-top: 80px;
-  float:right;
+}
+
+.template{
+  display:none;
 }
 
 .chat-utente{
+  float:right;
+}
+
+.lista{
   background-color:#128C7E;
+  padding:5px;
+  margin:5px;
   border-radius: 5px;
   color: #fff;
 }
+
+/* .chat-risposta{
+  background-color:#fff;
+  border-radius: 5px;
+  color: #000;
+  float:left;
+} */

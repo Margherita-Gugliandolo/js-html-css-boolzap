@@ -12,10 +12,11 @@ $('input').keydown(function(event){
 function sendMessage (){
  var contenutoMessaggio = $('.container-msg > input').val();
  console.log(contenutoMessaggio);
- var transform = $(contenutoMessaggio).clone();
- var oneChat = $(this);
- var invioMessaggio = $('#message-content');
+ var template = $('.template p').clone();
 
-  invioMessaggio.append(contenutoMessaggio);
+ var invioMessaggio = $('#message-content');
+ template.append(contenutoMessaggio);
+
+  invioMessaggio.append(template);
 }
 });
