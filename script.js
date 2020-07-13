@@ -14,7 +14,7 @@ function sendMessage (){
  console.log(contenutoMessaggio);
  var transform = $(contenutoMessaggio).clone();
  var oneChat = $(this);
- var invioMessaggio = $('#chat');
+ var invioMessaggio = $('#message-content');
 
   invioMessaggio.append(contenutoMessaggio);
 }

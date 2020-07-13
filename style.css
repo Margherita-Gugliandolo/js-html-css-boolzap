@@ -135,11 +135,11 @@ input:focus{
   color:grey;
 }
 
-#message-content{
+/* #message-content{
   width:100%;
   height: 80%;
   margin-top: 80px;
-}
+} */
 
 .clearfix::after {
   content: "";
@@ -147,10 +147,14 @@ input:focus{
   display: table;
 }
 
-#chat{
+#message-content{
   max-width: 50%;
+  margin-top: 80px;
+  float:right;
+}
+
+.chat-utente{
   background-color:#128C7E;
   border-radius: 5px;
   color: #fff;
-  float:right;
 }
