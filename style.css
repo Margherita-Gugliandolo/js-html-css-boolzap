@@ -9,6 +9,12 @@ body{
   position:relative;
   background-color: #e8e9ea;
 }
+
+img{
+  width:20%;
+  padding:0 10px;
+}
+
 #top{
   width:100%;
   height: 150px;
@@ -36,12 +42,11 @@ body{
 .rigth-section{
   width: 70%;
   height: 100%;
-  /* background-color: pink; */
   position: relative;
   background-image: url('img/wapp-back.png');
 }
 
-.info, .destinatario{
+.info, #destinatario{
   width:100%;
   height: 200px;
   position: absolute;
@@ -49,11 +54,20 @@ body{
   left:0;
 }
 
-.destinatario, .section-one, .section-three{
+#destinatario, .section-one, .section-three{
   height: 80px;
   background-color: #f3f4f5;
 }
 
+#destinatario img{
+  width:12%;
+  padding:2%;
+}
+
+#destinatario{
+  display: flex;
+  align-items: center;
+}
 .section-one{
   border-right: 2px solid #dbdbdb;
 }
@@ -61,13 +75,63 @@ body{
 .section-two{
   height: 70px;
   background-color: #34B7F1;
+  display: flex;
+  align-items:center;
+}
+
+.notifiche a{
+  color:#585b5d;
+  font-size: 14px;
+}
+
+.fa-bell-slash{
+  padding: 10px;
+  margin:0 10px;
+  font-size: 24px;
+  border-radius: 50%;
+  color:#34B7F1;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .section-three{
-  height: 40px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contacts{
+  width:100%;
+  margin-top: 200px;
+}
+
+.user{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding:10px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.me{
+  justify-content: space-between;
+  border:none;
+}
+
+.notifiche i{
+  font-size: 20px;
+  color: #d8d8d8;
+  padding:0 5px;
+}
+
+.michele{
+  background-color: #d8d8d8;
+}
+
+.stato-wapp{
+  font-size: 14px;
+  color:grey;
+  padding-top: 5px;
 }
 
 .input-message{
@@ -159,12 +223,11 @@ input:focus{
   float:right;
 }
 
-.lista{
-  background-color:#128C7E;
-  padding:5px;
-  margin:5px;
+.utente{
+  background-color:#DCF8C6;
+  padding:15px;
+  margin:10px 25px 0;
   border-radius: 5px;
-  color: #fff;
 }
 
 /* .chat-risposta{
