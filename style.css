@@ -49,25 +49,23 @@ body{
   left:0;
 }
 
-.destinatario, .one, .three{
+.destinatario, .section-one, .section-three{
   height: 80px;
   background-color: #f3f4f5;
 }
 
-.one{
+.section-one{
   border-right: 2px solid #dbdbdb;
 }
 
-.two{
+.section-two{
   height: 70px;
   background-color: #34B7F1;
 }
 
-.three{
+.section-three{
   height: 50px;
 }
-
-
 
 .input-message{
   width:100%;
@@ -76,4 +74,36 @@ body{
   left:0;
   bottom:0;
   background-color: #ece5dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-msg{
+  width:90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input-message input{
+  border: none;
+  width:80%;
+  height: 50px;
+  border-radius: 3px;
+}
+input:focus{
+ outline:none;
+ padding-left:3%;
+}
+
+/* placeholder style */
+.input-message ::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ccc;
+    padding-left: 3%;
+}
+
+.input-message i{
+  font-size: 25px;
+  color:grey;
 }
