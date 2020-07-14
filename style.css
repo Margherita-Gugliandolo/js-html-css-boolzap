@@ -11,7 +11,7 @@ body{
 }
 
 img{
-  width:20%;
+  width:80px;
   padding:0 10px;
 }
 
@@ -23,14 +23,14 @@ header{
 
 #container-wapp{
   width:80%;
-  height:95%;
+  height:90%;
   position:absolute;
   top:50%;
  left:50%;
  transform: translate(-50%, -50%);
  display: flex;
 }
-
+/* Sezione sinistra */
 .left-section{
   width:30%;
   height: 100%;
@@ -38,42 +38,17 @@ header{
   position:relative;
 }
 
-.rigth-section{
-  width: 70%;
-  height: 100%;
-  position: relative;
-  background-image: url('img/wapp-back.png');
-}
-
-#destinatario{
-  display: flex;
-  align-items: center;
-}
-
-#destinatario img{
-  width:12%;
-  padding:2%;
-}
-
-.info, #destinatario{
-  width:100%;
-  height: 200px;
-  position: absolute;
-  top:0;
-  left:0;
-}
-
-#destinatario, .section-one, .section-three{
-  height: 80px;
-  background-color: #f3f4f5;
+.info{
+  height: 30%;
 }
 
 .section-one{
   border-right: 2px solid #dbdbdb;
+  height: 12vh;
 }
 
 .section-two{
-  height: 70px;
+  padding:5% 2%;
   background-color: #34B7F1;
   display: flex;
   align-items:center;
@@ -94,16 +69,23 @@ header{
 }
 
 .section-three{
-  height: 50px;
+  padding:2% 1%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
 }
 
 .contacts{
   width:100%;
-  margin-top: 200px;
+  height:70%;
+  overflow: auto;
 }
+/* width */
+.contacts::-webkit-scrollbar {
+  width: 0;
+}
+
 /* casella avatar */
 .user{
   display: flex;
@@ -116,12 +98,14 @@ header{
 .me{
   justify-content: space-between;
   border:none;
+  padding:15px 0;
 }
+
 /* icone vicino al profilo personale in alto a sinistra */
 .notifiche i{
   font-size: 20px;
   color: #d8d8d8;
-  padding:0 5px;
+  padding:0 10px;
 }
 /* Utente in rubrica attivo con cui sto parlando */
 .active{
@@ -132,6 +116,24 @@ header{
   font-size: 14px;
   color:grey;
   padding-top: 5px;
+}
+
+/* Sezione destra */
+.right-section{
+  width: 70%;
+  height: 100%;
+  position: relative;
+  background-image: url('img/wapp-back.png');
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  height: 12vh;
+}
+
+.header-right, .section-one, .section-three{
+  background-color: #f3f4f5;
 }
 
 .input-message{
@@ -199,37 +201,69 @@ input:focus{
   color:grey;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.message-right-container{
+  width: 100%;
+  height: calc( 100% - 70px - 70px);
 }
 
-#message-content{
-  margin-top: 80px;
-}
-
-.template{
-  display:none;
-}
-
-.chat-utente{
-  float:right;
-}
-
-.utente{
-  background-color:#DCF8C6;
-  padding:15px;
-  margin:10px 25px 0;
-  border-radius: 5px;
-}
-
-/* .chat-risposta{
+.message-right-container .message{
+  position:relative;
   float:left;
-} */
-.risposta{
-  background-color:#fff;
-  padding:15px;
-  margin:10px 0 0 25px;
-  border-radius: 5px;
+  clear: both;
+  min-width: 25%;
+  max-width:50%;
+  margin:10px;
+  padding:20px;
+  border-radius:5px;
+  z-index:999;
+  background-color: #fff;
+}
+
+.message-right-container .message.sent{
+  float:right;
+  background-color: #dcf8c6;
+}
+
+.message-right-container .message-time{
+  position:absolute;
+  bottom:5px;
+  right: 5px;
+  font-size: 12px;
+}
+
+
+.message-right-container .message .message-options-menu,
+.message-right-container .message .message-options{
+  display: none;
+}
+
+
+.message-right-container .message:hover .message-options{
+  display: block;
+  float: right;
+  cursor: pointer;
+}
+
+
+/* Stile opzioni menu messaggio */
+
+.message-right-container .message .message-options-menu{
+  position:absolute;
+  bottom: -75px;
+  right:0;
+
+  width: 180;
+  height: 80px;
+  padding:5px;
+  background-color: #fff;
+  color:#585b5d;
+  text-align: inherit;
+  line-height: 25px;
+  font-size: 14px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 4px 0px #585b5d;
+}
+
+#template-message-sent{
+  display: none;
 }

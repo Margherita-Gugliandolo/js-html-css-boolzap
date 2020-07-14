@@ -58,13 +58,6 @@
             </div>
           </div>
           <div class="user">
-            <img src="img/avataaars-3.png" alt="Manuel">
-            <div class="notifiche">
-              <p>Manuel</p>
-              <p class="stato-wapp">Una filosofia di vita a caso<p>
-            </div>
-          </div>
-          <div class="user">
             <img src="img/avataaars-4.png" alt="Frida">
             <div class="notifiche">
               <p>Frida</p>
@@ -86,9 +79,16 @@
             </div>
           </div>
           <div class="user">
-            <img src="img/avataaars-7.png" alt="Andrea">
+            <img src="img/avataaars-7.png" alt="Carlo">
             <div class="notifiche">
-              <p>Andrea</p>
+              <p>Carlo</p>
+              <p class="stato-wapp">Una filosofia di vita a caso<p>
+            </div>
+          </div>
+          <div class="user">
+            <img src="img/avataaars-3.png" alt="Mauro">
+            <div class="notifiche">
+              <p>Mauro</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
@@ -99,27 +99,72 @@
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
+          <div class="user">
+            <img src="img/avataaars.png" alt="Alberto">
+            <div class="notifiche">
+              <p>Alberto</p>
+              <p class="stato-wapp">Una filosofia di vita a caso<p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="rigth-section">
-        <div id="destinatario">
+      <div class="right-section">
+        <div class="header-right">
             <img src="img/avataaars-2.png" alt="Michele">
             <div class="notifiche">
               <p>Giacomo</p>
-              <p class="stato-wapp">Ultimo accesso oggi ore 15.45<p>
+              <p class="stato-wapp">Sta scrivendo....<p>
             </div>
         </div>
-        <div class="chat-utente chat-risposta"  id="message-content">
-           <div class="template">
-             <p class="utente risposta"></p>
-           </div>
+        <div class="message-right-container">
+          <div id="right-messages" class="right-messages">
+            <!-- <div class="message received">
+              <span class="message-text">Ciao come stai?</span>
+              <span class="message-time">12:45</span>
+              <i class="fa fa-chevron-down f-right message-options"></i>
+              <div class="message-options-menu">
+                <div class="message-info">Informazioni</div>
+                <div class="message-destroy">Cancella messaggio</div>
+              </div>
+            </div>
+            <div class="message sent">
+              <span class="message-text">Tutto bene..</span>
+              <span class="message-time">14:00</span>
+              <i class="fa fa-chevron-down f-right message-options"></i>
+              <div class="message-options-menu">
+                <div class="message-info">Informazioni</div>
+                <div class="message-destroy">Cancella messaggio</div>
+              </div>
+            </div> -->
+          </div>
         </div>
+
         <div class="input-message">
           <div class="container-msg">
             <a href="#"><i class="far fa-smile"></i></a>
-            <input type="text" name="write" value="" placeholder="Scrivi un messaggio">
+            <input id="message-input" type="text" name="write" value="" placeholder="Scrivi un messaggio">
             <a href="#"><i class="fas fa-microphone"></i></a>
           </div>
+        </div>
+      </div>
+    </div>
+    <div id="template-message-sent">
+      <div id="sent" class="message sent">
+        <span id="msg-text" class="message-text"></span>
+        <span id="msg-time" class="message-time"></span>
+        <i class="fa fa-chevron-down f-right message-options"></i>
+        <div class="message-options-menu">
+          <div class="message-info">Informazioni</div>
+          <div class="message-destroy">Elimina messaggio</div>
+        </div>
+      </div>
+      <div id="received" class="message received">
+        <span id="msg-text-received" class="message-text"></span>
+        <span id="msg-time-received" class="message-time"></span>
+        <i class="fa fa-chevron-down f-right message-options"></i>
+        <div class="message-options-menu">
+          <div class="message-info">Informazioni</div>
+          <div class="message-destroy">Elimina messaggio</div>
         </div>
       </div>
     </div>
