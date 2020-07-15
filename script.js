@@ -24,7 +24,7 @@ function sendKeyup(event){
 
     setTimeout(function() {
     // tempo due secondi in cui deve partire la risposta
-    receivedMessage('Come dice Giovanni: "sono contentino.."');
+    receivedMessage('Tutto ok');
    },2000);
  }
 }
