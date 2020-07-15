@@ -91,7 +91,6 @@ function addTestClickListener(){
   $(document).on('click', '.message-options', function(){
     // Qui gli dico di fare qualcosa quando clicco sulla freccia
    showOptionsMenu();
-   hideOptionMenu();
    console.log('click');
   });
 }
@@ -102,7 +101,7 @@ function showOptionsMenu(){
 
   if(click){
        options.show();
-  }
+     }
 }
 
 
