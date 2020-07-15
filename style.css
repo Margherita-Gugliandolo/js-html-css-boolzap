@@ -104,8 +104,9 @@ header{
 /* icone vicino al profilo personale in alto a sinistra */
 .notifiche i{
   font-size: 20px;
-  color: #d8d8d8;
-  padding:0 10px;
+  color: grey;
+  padding:0 7px;
+  margin-right: 10px;
 }
 /* Utente in rubrica attivo con cui sto parlando */
 .active{

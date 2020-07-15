@@ -1,9 +1,13 @@
+// milestone1
+
 function addSendListener (){
 
 var target = $('#message-input')
 target.keyup(sendKeyup);
 
 }
+
+
 // funzione 1
 function sendKeyup(event){
 
@@ -22,7 +26,7 @@ function sendKeyup(event){
     // tempo due secondi in cui deve partire la risposta
     receivedMessage('Come dice Giovanni: "sono contentino.."');
    },2000);
-  }
+ }
 }
 // funzione 2
 function sendMessage(txt){
@@ -55,11 +59,34 @@ function receivedMessage(txt){
   target.append(template);
 }
 
+// Search funcs
 
+function addSearchLeastener(){
+  var target = $("#search-input");
+  target.keyup(searchKeyup);
+}
+
+function searchKeyup(){
+  var input = $(this);
+  var txt = input.val();
+
+  var contacts = $(".contacts .user")
+  contacts.each(function(){
+    var contact = $(this);
+    var name = contact.find('.user-name').text();
+
+    if(name.toLowerCase().includes(txt.toLowerCase())){
+      contact.show();
+    }else {contact.hide();
+    }
+
+  });
+}
 
 // Funzioni di collegamento
 function init () {
   addSendListener();
+  addSearchLeastener();
 }
 
 $(document).ready(init);
