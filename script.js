@@ -87,29 +87,30 @@ function searchKeyup(){
 // Add click Milestone 3
 //Quando clicco sull'icona rendo visibile la classe .message-options-menu
 
-function addTestClickListener(){
+function addClickListener(){
   $(document).on('click', '.message-options', function(){
     // Qui gli dico di fare qualcosa quando clicco sulla freccia
-   showOptionsMenu();
+
+    var click = $(this);
+    var optionSent = $('#sent .message-options-menu');
+    
+    console.log(click);
+
+    if(click){
+         optionSent.toggle();
+       }
+
    console.log('click');
   });
 }
 
-function showOptionsMenu(){
-  var click = $(this);
-  var options = $('#sent .message-options-menu');
-
-  if(click){
-       options.show();
-     }
-}
 
 
 // Funzioni di collegamento
 function init () {
   addSendListener();
   addSearchLeastener();
-  addTestClickListener();
+  addClickListener();
 }
 
 $(document).ready(init);
