@@ -59,7 +59,7 @@ function receivedMessage(txt){
   target.append(template);
 }
 
-// Search funcs
+// Search funcs Milestone 2
 
 function addSearchLeastener(){
   var target = $("#search-input");
@@ -77,16 +77,40 @@ function searchKeyup(){
 
     if(name.toLowerCase().includes(txt.toLowerCase())){
       contact.show();
-    }else {contact.hide();
+    }else {
+      contact.hide();
     }
 
   });
 }
 
+// Add click Milestone 3
+//Quando clicco sull'icona rendo visibile la classe .message-options-menu
+
+function addTestClickListener(){
+  $(document).on('click', '.message-options', function(){
+    // Qui gli dico di fare qualcosa quando clicco sulla freccia
+   showOptionsMenu();
+   hideOptionMenu();
+   console.log('click');
+  });
+}
+
+function showOptionsMenu(){
+  var click = $(this);
+  var options = $('#sent .message-options-menu');
+
+  if(click){
+       options.show();
+  }
+}
+
+
 // Funzioni di collegamento
 function init () {
   addSendListener();
   addSearchLeastener();
+  addTestClickListener();
 }
 
 $(document).ready(init);
