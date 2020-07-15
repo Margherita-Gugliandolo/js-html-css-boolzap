@@ -88,20 +88,26 @@ function searchKeyup(){
 //Quando clicco sull'icona rendo visibile la classe .message-options-menu
 
 function addClickListener(){
-  $(document).on('click', '.message-options', function(){
+  $(document).on('click', '.f-right', function(){
     // Qui gli dico di fare qualcosa quando clicco sulla freccia
-
     var click = $(this);
-    var optionSent = $('#sent .message-options-menu');
-    
-    console.log(click);
+    var optionS = $('#sent .message-options-menu');
 
-    if(click){
-         optionSent.toggle();
+     if(click){
+         optionS.toggle();
        }
-
-   console.log('click');
   });
+
+  $(document).on('click', '.f-left', function(){
+    // Qui gli dico di fare qualcosa quando clicco sulla freccia
+    var click = $(this);
+    var optionR = $('#received .message-options-menu');
+
+     if(click){
+         optionR.toggle();
+       }
+  });
+
 }
 
 
