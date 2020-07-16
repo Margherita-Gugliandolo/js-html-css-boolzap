@@ -72,12 +72,15 @@ function searchKeyup(){
 
   var contacts = $(".contacts .user")
   contacts.each(function(){
+
     var contact = $(this);
     var name = contact.find('.user-name').text();
 
+
     if(name.toLowerCase().includes(txt.toLowerCase())){
+
       contact.show();
-    }else {
+     }else {
       contact.hide();
     }
 
@@ -91,7 +94,7 @@ function addClickListener(){
   $(document).on('click', '.f-right', function(){
     // Qui gli dico di fare qualcosa quando clicco sulla freccia
     var click = $(this);
-    var optionS = $('#sent .message-options-menu');
+    var optionS = click.siblings('#sent .message-options-menu');
 
      if(click){
          optionS.toggle();
@@ -106,9 +109,14 @@ function addClickListener(){
      if(click){
          optionR.toggle();
        }
-  });
+});
 
 }
+
+// Quando clicco sulla classe .message-destroy il messaggio inviato o ricevuto deve sparire
+
+
+
 
 
 
@@ -117,6 +125,7 @@ function init () {
   addSendListener();
   addSearchLeastener();
   addClickListener();
+
 }
 
 $(document).ready(init);

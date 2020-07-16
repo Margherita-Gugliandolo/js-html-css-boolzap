@@ -265,6 +265,10 @@ input:focus{
   box-shadow: 0px 0px 4px 0px #585b5d;
 }
 
+.message-destroy{
+  cursor: pointer;
+}
+
 #template-message-sent{
   display: none;
 }
