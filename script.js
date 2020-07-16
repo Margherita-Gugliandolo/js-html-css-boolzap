@@ -92,7 +92,7 @@ function searchKeyup(){
 
 function addClickListener(){
   $(document).on('click', '.f-right', function(){
-    // Qui gli dico di fare qualcosa quando clicco sulla freccia
+
     var click = $(this);
     var optionS = click.siblings('#sent .message-options-menu');
 
@@ -102,15 +102,27 @@ function addClickListener(){
   });
 
   $(document).on('click', '.f-left', function(){
-    // Qui gli dico di fare qualcosa quando clicco sulla freccia
+
     var click = $(this);
-    var optionR = $('#received .message-options-menu');
+    var optionR = click.siblings('#received .message-options-menu');
 
      if(click){
          optionR.toggle();
        }
 });
 
+}
+
+function addMessageDestroyListener(){
+$(document).on('click', '.message-destroy', messageDestroyClick);
+
+function messageDestroyClick(){
+
+ var destroyOptions = $(this);
+ var message = destroyOptions.closest('.message');
+ message.remove();
+
+  };
 }
 
 // Quando clicco sulla classe .message-destroy il messaggio inviato o ricevuto deve sparire
@@ -125,6 +137,7 @@ function init () {
   addSendListener();
   addSearchLeastener();
   addClickListener();
+  addMessageDestroyListener();
 
 }
 
