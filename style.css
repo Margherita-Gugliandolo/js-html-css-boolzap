@@ -232,6 +232,14 @@ input:focus{
   font-size: 12px;
 }
 
+#template-message-sent{
+  display: none;
+}
+
+#template-message-sent.active{
+  display: block;
+}
+
 
 .message-right-container .message .message-options-menu,
 .message-right-container .message .message-options{
@@ -267,8 +275,4 @@ input:focus{
 
 .message-destroy{
   cursor: pointer;
-}
-
-#template-message-sent{
-  display: none;
 }

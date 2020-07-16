@@ -122,13 +122,37 @@ function messageDestroyClick(){
  var message = destroyOptions.closest('.message');
  message.remove();
 
-  };
+ };
 }
 
-// Quando clicco sulla classe .message-destroy il messaggio inviato o ricevuto deve sparire
+// Click sul contatto​ mostra la conversazione del contatto cliccato, è possibile inserire nuovi messaggi per ogni conversazione
 
+//aggiungo la classe .active solo all'user cliccato
 
+function addUserListener(){
 
+  var utente = $('.contacts .user');
+
+  utente.click(contactClick);
+}
+
+function contactClick(){
+
+  var clickContact = $(this);
+  var id = clickContact.data('id');
+  var utente = $('.contacts .user');
+
+  utente.removeClass('active');
+  clickContact.addClass('active');
+
+  console.log('id', id);
+
+  var conversation = $('#template-message-sent');
+  var selectedConversation = $('#template-message-sent[data-id=0]');
+
+  conversation.removeClass('active');
+  selectedConversation.addClass('active');
+}
 
 
 
@@ -138,6 +162,7 @@ function init () {
   addSearchLeastener();
   addClickListener();
   addMessageDestroyListener();
+  addUserListener();
 
 }
 

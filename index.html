@@ -43,70 +43,70 @@
         </div>
         <div id="contacts" class="contacts">
           <!-- elenco chat -->
-          <div class="user">
+          <div class="user active" data-id='0'>
             <img src="img/avataaars.png" alt="Michele">
             <div class="notifiche">
               <p class="user-name">Michele</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user">
+          <div class="user"data-id='1'>
             <img src="img/avataaars-2.png" alt="Giacomo">
             <div class="notifiche">
               <p class="user-name">Giacomo</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user">
+          <div class="user" data-id='2'>
             <img src="img/avataaars-4.png" alt="Frida">
             <div class="notifiche">
               <p class="user-name">Frida</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user">
+          <div class="user" data-id='3'>
             <img src="img/avataaars-5.png" alt="Alice">
             <div class="notifiche">
               <p class="user-name">Alice</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user">
+          <div class="user" data-id='4'>
             <img src="img/avataaars-6.png" alt="Giorgia">
             <div class="notifiche">
               <p class="user-name">Giorgia</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user">
+          <div class="user" data-id='5'>
             <img src="img/avataaars-7.png" alt="Carlo">
             <div class="notifiche">
               <p class="user-name">Carlo</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user">
+          <div class="user" data-id='6'>
             <img src="img/avataaars-3.png" alt="Mauro">
             <div class="notifiche">
               <p class="user-name">Mauro</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user">
+          <div class="user" data-id='7'>
             <img src="img/avataaars-8.png" alt="Samuele">
             <div class="notifiche">
               <p class="user-name">Samuele</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user active">
+          <div class="user" data-id='8'>
             <img src="img/avataaars-11.png" alt="Patrizio">
             <div class="notifiche">
               <p class="user-name">Patrizio</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user">
+          <div class="user" data-id='9'>
             <img src="img/avataaars-10.png" alt="Raoul">
             <div class="notifiche">
               <p class="user-name">Raoul</p>
@@ -126,8 +126,51 @@
 
         <!-- Contenitore messaggi -->
         <div class="message-right-container">
-          <div id="right-messages" class="right-messages"></div>
+          <div id="right-messages" class="right-messages">
+            <div id="template-message-sent" class="active" data-id='0'>
+              <div id="sent" class="message sent">
+                <span id="msg-text" class="message-text">Proviamo se funziona così</span>
+                <span id="msg-time" class="message-time"></span>
+                <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="message-options-menu">
+                  <div class="message-info">Informazioni</div>
+                  <div class="message-destroy">Elimina messaggio</div>
+                </div>
+              </div>
+              <div id="received" class="message received">
+                <span id="msg-text-received" class="message-text">Secondo me si</span>
+                <span id="msg-time-received" class="message-time"></span>
+                <i class="fa fa-chevron-down f-left message-options"></i>
+                <div class="message-options-menu">
+                  <div class="message-info">Informazioni</div>
+                  <div class="message-destroy">Elimina messaggio</div>
+                </div>
+              </div>
+            </div>
+
+            <div id="template-message-sent" data-id='1'>
+              <div id="sent" class="message sent">
+                <span id="msg-text" class="message-text">Menomale vah</span>
+                <span id="msg-time" class="message-time"></span>
+                <i class="fa fa-chevron-down f-right message-options"></i>
+                <div class="message-options-menu">
+                  <div class="message-info">Informazioni</div>
+                  <div class="message-destroy">Elimina messaggio</div>
+                </div>
+              </div>
+              <div id="received" class="message received">
+                <span id="msg-text-received" class="message-text">Proseguiamo?</span>
+                <span id="msg-time-received" class="message-time"></span>
+                <i class="fa fa-chevron-down f-left message-options"></i>
+                <div class="message-options-menu">
+                  <div class="message-info">Informazioni</div>
+                  <div class="message-destroy">Elimina messaggio</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
 
         <div class="input-message">
           <div class="container-msg">
@@ -138,7 +181,11 @@
         </div>
       </div>
     </div>
-    <div id="template-message-sent">
+
+    <!-- Conversazioni -->
+
+
+    <!-- <div id="template-message-sent">
       <div id="sent" class="message sent">
         <span id="msg-text" class="message-text"></span>
         <span id="msg-time" class="message-time"></span>
@@ -157,7 +204,7 @@
           <div class="message-destroy">Elimina messaggio</div>
         </div>
       </div>
-    </div>
+    </div> -->
    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
