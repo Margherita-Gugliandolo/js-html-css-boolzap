@@ -31,7 +31,7 @@ function sendKeyup(event){
 // funzione 2
 function sendMessage(txt){
   var template = $('#sent').clone();
-  var target = $('#right-messages');
+  var target = $('.right-messages.active');
 
 
   template.find('#msg-text').text(txt);
@@ -49,7 +49,7 @@ function getActualHour(){
 // funzione 4
 function receivedMessage(txt){
   var template = $('#received').clone();
-  var target = $('#right-messages');
+  var target = $('.right-messages.active');
 
 
   template.find('#msg-text-received').text(txt);
