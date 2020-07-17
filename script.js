@@ -24,7 +24,7 @@ function sendKeyup(event){
 
     setTimeout(function() {
     // tempo due secondi in cui deve partire la risposta
-    receivedMessage('Tutto ok');
+    receivedMessage('ok');
    },2000);
  }
 }

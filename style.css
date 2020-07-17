@@ -47,6 +47,10 @@ header{
   height: 12vh;
 }
 
+#friendzone{
+  border-radius: 50%;
+}
+
 .section-two{
   padding:5% 2%;
   background-color: #34B7F1;
@@ -111,6 +115,10 @@ header{
 /* Utente in rubrica attivo con cui sto parlando */
 .active{
   background-color: #d8d8d8;
+}
+
+.paperclip{
+  margin-left: 35%;
 }
 
 .stato-wapp{

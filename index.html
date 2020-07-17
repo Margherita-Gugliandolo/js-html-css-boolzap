@@ -19,7 +19,7 @@
           <!-- mia foto profilo con icone funzionalità -->
           <div class="section-one">
             <div class="user me">
-              <img src="img/avataaars-9.png" alt="myProfile">
+              <img id="friendzone" src="img/boom.friendzone.jpeg" alt="myProfile">
               <div class="notifiche">
                 <i class="fas fa-circle-notch"></i>
                 <i class="fas fa-comment-alt"></i>
@@ -44,30 +44,30 @@
         <div id="contacts" class="contacts">
           <!-- elenco chat -->
           <div class="user" data-id='0'>
-            <img src="img/avataaars.png" alt="Michele">
+            <img src="img/avataaars-9.png" alt="Michela">
             <div class="notifiche">
-              <p class="user-name">Michele</p>
+              <p class="user-name">Michela</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
           <div class="user active" data-id='1'>
+            <img src="img/avataaars.png" alt="Carlo">
+            <div class="notifiche">
+              <p class="user-name">Carlo</p>
+              <p class="stato-wapp">Una filosofia di vita a caso<p>
+            </div>
+          </div>
+          <div class="user" data-id='2'>
             <img src="img/avataaars-2.png" alt="Giacomo">
             <div class="notifiche">
               <p class="user-name">Giacomo</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
-          <div class="user" data-id='2'>
-            <img src="img/avataaars-4.png" alt="Frida">
-            <div class="notifiche">
-              <p class="user-name">Frida</p>
-              <p class="stato-wapp">Una filosofia di vita a caso<p>
-            </div>
-          </div>
           <div class="user" data-id='3'>
-            <img src="img/avataaars-5.png" alt="Alice">
+            <img src="img/avataaars-5.png" alt="Elisa">
             <div class="notifiche">
-              <p class="user-name">Alice</p>
+              <p class="user-name">Elisa</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
@@ -86,23 +86,23 @@
             </div>
           </div>
           <div class="user" data-id='6'>
-            <img src="img/avataaars-3.png" alt="Mauro">
+            <img src="img/avataaars-3.png" alt="Maur">
             <div class="notifiche">
-              <p class="user-name">Mauro</p>
+              <p class="user-name">Maura</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
           <div class="user" data-id='7'>
-            <img src="img/avataaars-8.png" alt="Samuele">
+            <img src="img/avataaars-8.png" alt="Sami">
             <div class="notifiche">
-              <p class="user-name">Samuele</p>
+              <p class="user-name">Sami</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
           <div class="user" data-id='8'>
-            <img src="img/avataaars-11.png" alt="Patrizio">
+            <img src="img/avataaars-11.png" alt="Patrizia">
             <div class="notifiche">
-              <p class="user-name">Patrizio</p>
+              <p class="user-name">Patrizia</p>
               <p class="stato-wapp">Una filosofia di vita a caso<p>
             </div>
           </div>
@@ -116,12 +116,16 @@
         </div>
       </div>
       <div class="right-section">
-        <div class="header-right">
-            <img src="img/avataaars-11.png" alt="Michele">
+        <div class="header-right notifiche">
+            <img src="img/avataaars-12.png" alt="Friendzone">
             <div class="notifiche">
-              <p class="user-name">Patrizio</p>
-              <p class="stato-wapp">Sta scrivendo....<p>
+              <p class="user-name">Friendzone</p>
+              <p class="stato-wapp">Conversazioni tratte da "Boom Friendzone"<p>
             </div>
+            <span class="paperclip">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-paperclip"></i>
+            <i class="fas fa-ellipsis-v"></i></span>
         </div>
 
         <!-- Contenitore messaggi -->
@@ -129,7 +133,7 @@
           <div class="right-messages" data-id='0'>
               <div id="sent" class="message sent">
                 <span id="msg-text" class="message-text">Amore ma che hai?</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-time" class="message-time">11.00</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -138,7 +142,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">Niente</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">11.01</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -146,11 +150,11 @@
                 </div>
               </div>
             </div>
-                 <!-- Messaggi inviati -->
+
             <div class="right-messages active" data-id='1'>
               <div id="sent" class="message sent">
-                <span id="msg-text" class="message-text">Mi spieghi dove sei finito? Ti avevo detto in alle 4 in gelateria, qui c'è Stefano che continua a provarci con me e mi sta appiccicato</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-text" class="message-text">Mi spieghi dove sei finito? Ti avevo detto alle 4 in gelateria, qui c'è Stefano che continua a provarci con me e mi sta appiccicato</span>
+                <span id="msg-time" class="message-time">13.21</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -159,7 +163,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">Che bastardo mi ha scritto di correre al parco che stavi limonando con uno</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">13.25</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -168,10 +172,10 @@
               </div>
             </div>
 
-            <div class="right-messages active" data-id='2'>
+            <div class="right-messages" data-id='2'>
               <div id="sent" class="message sent">
                 <span id="msg-text" class="message-text">Sarò fissata, ma il mio uomo deve sapere almeno scrivere nella sua lingua madre, non potrei mai stare con un troglodita che non conosce nemmeno la differenza tra "A" e "HA", ma ti rendi conto?</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-time" class="message-time">9.00</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -180,7 +184,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">Ai ragione.</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">9.10</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -189,10 +193,10 @@
               </div>
             </div>
 
-            <div class="right-messages active" data-id='3'>
+            <div class="right-messages" data-id='3'>
               <div id="sent" class="message sent">
                 <span id="msg-text" class="message-text">Sei veramente carina Giuli</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-time" class="message-time">23.00</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -201,7 +205,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">*Elisa</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">23.30</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -210,10 +214,10 @@
               </div>
             </div>
 
-            <div class="right-messages active" data-id='4'>
+            <div class="right-messages" data-id='4'>
               <div id="sent" class="message sent">
                 <span id="msg-text" class="message-text">Ti va di uscire? Dimmi un giorno che ti va bene.</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-time" class="message-time">12.00</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -222,7 +226,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">Ieri</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">14.50</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -231,10 +235,10 @@
               </div>
             </div>
 
-            <div class="right-messages active" data-id='5'>
+            <div class="right-messages" data-id='5'>
               <div id="sent" class="message sent">
                 <span id="msg-text" class="message-text">Mi sono fatto bocciare per stare con la ragazza che mi piace e si è messa con il mio migliore amico</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-time" class="message-time">16.30</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -243,7 +247,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">R.I.P</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">16.32</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -252,10 +256,10 @@
               </div>
             </div>
 
-            <div class="right-messages active" data-id='6'>
+            <div class="right-messages" data-id='6'>
               <div id="sent" class="message sent">
                 <span id="msg-text" class="message-text">Ehi ciao! Ieri eravamo alla stessa festa e mi sono accorto che cercavi il mio sguardo ma ero insieme ad altri e non potevo far capire niente..mi sono fatto dare il tuo numero da Sonia spero non ti dispiaccia :) comunque se vuoi qualche volta possiamo vederci e parlare un po'</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-time" class="message-time">8.30</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -264,7 +268,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">Veramente non trovavo il bagno</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">10.00</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -273,10 +277,10 @@
               </div>
             </div>
 
-            <div class="right-messages active" data-id='7'>
+            <div class="right-messages" data-id='7'>
               <div id="sent" class="message sent">
                 <span id="msg-text" class="message-text">E allora da oggi siamo ufficialmente fidanzati?</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-time" class="message-time">18.45</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -285,7 +289,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">Siiii!!! No..aspe, facciamo da domani? Che stasera vado a cena con le mie amiche e non vorrei metterti subito le corna</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">19.30</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -294,10 +298,10 @@
               </div>
             </div>
 
-            <div class="right-messages active" data-id='8'>
+            <div class="right-messages" data-id='8'>
               <div id="sent" class="message sent">
                 <span id="msg-text" class="message-text">Ciao, separato da tre mesi, ti va due chiacchiere?</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-time" class="message-time">13.20</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -306,7 +310,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">Ciao, ho 20anni e l'unica cosa che separo sono i Ringo per leccare la crema all'interno</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">14.00</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -315,10 +319,10 @@
               </div>
             </div>
 
-            <div class="right-messages active" data-id='9'>
+            <div class="right-messages" data-id='9'>
               <div id="sent" class="message sent">
                 <span id="msg-text" class="message-text">Fai la persona matura!</span>
-                <span id="msg-time" class="message-time"></span>
+                <span id="msg-time" class="message-time">17.04</span>
                 <i class="fa fa-chevron-down f-right message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -327,7 +331,7 @@
               </div>
               <div id="received" class="message received">
                 <span id="msg-text-received" class="message-text">gne gne gne</span>
-                <span id="msg-time-received" class="message-time"></span>
+                <span id="msg-time-received" class="message-time">17.08</span>
                 <i class="fa fa-chevron-down f-left message-options"></i>
                 <div class="message-options-menu">
                   <div class="message-info">Informazioni</div>
@@ -347,30 +351,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Conversazioni -->
-
-
-    <!-- <div id="template-message-sent">
-      <div id="sent" class="message sent">
-        <span id="msg-text" class="message-text"></span>
-        <span id="msg-time" class="message-time"></span>
-        <i class="fa fa-chevron-down f-right message-options"></i>
-        <div class="message-options-menu">
-          <div class="message-info">Informazioni</div>
-          <div class="message-destroy">Elimina messaggio</div>
-        </div>
-      </div>
-      <div id="received" class="message received">
-        <span id="msg-text-received" class="message-text"></span>
-        <span id="msg-time-received" class="message-time"></span>
-        <i class="fa fa-chevron-down f-left message-options"></i>
-        <div class="message-options-menu">
-          <div class="message-info">Informazioni</div>
-          <div class="message-destroy">Elimina messaggio</div>
-        </div>
-      </div>
-    </div> -->
    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
