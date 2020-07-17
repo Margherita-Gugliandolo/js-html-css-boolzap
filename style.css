@@ -232,11 +232,11 @@ input:focus{
   font-size: 12px;
 }
 
-#template-message-sent{
+.message-right-container .right-messages{
   display: none;
 }
 
-#template-message-sent.active{
+.message-right-container .right-messages.active{
   display: block;
 }
 

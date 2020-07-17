@@ -147,8 +147,8 @@ function contactClick(){
 
   console.log('id', id);
 
-  var conversation = $('#template-message-sent');
-  var selectedConversation = $('#template-message-sent[data-id=0]');
+  var conversation = $('.right-messages');
+  var selectedConversation = $('.right-messages[data-id=' + id +']');
 
   conversation.removeClass('active');
   selectedConversation.addClass('active');
